@@ -1,51 +1,58 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <title>Formulário Tela Login</title>
 </head>
+
 <body>
-    
-<header>
-    <nav>
 
-    </nav>
-</header>
+    <header>
+        <nav>
 
-<main>
+        </nav>
+    </header>
 
-<div class="container">
+    <main>
 
-    <h2 id="titulo">Login</h2>
+        <div class="container">
 
-    <form id="form-login">
+            <h2 id="titulo">Login</h2>
 
-        <div id="campo-email">
- <label for="email"> Email: </label>
-        <input type="email" id="email" placeholder="Email" required>
+            <form id="form-login">
+
+                <div class="conjunto" id="c-email">
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="conjunto" id="c-senha">
+                    <label for="password"> Senha: </label>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                </div>
+
+                <button id="botao-envio" type="submit"> Entrar </button>
+
+            </form>
+
+            <div id="mensagem"></div>
+            <div class="toggle" id="toggle">
+                <p> Não tem conta? Cadastre-se! </p>
+            </div>
 
         </div>
 
-    <div id="campo-senha">
-        <label for="password"> Senha: </label>
-        <input type="password" id="senha" placeholder="Senha" required> 
-    </div>
+    </main>
 
-       
+    <footer>
 
-    </form>
-
-</div>
-
-</main>
-
-<footer>
-
-</footer>
+    </footer>
 
     <script src="scripts/script.js"></script>
 
 </body>
+
 </html>
