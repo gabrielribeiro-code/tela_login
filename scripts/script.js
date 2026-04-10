@@ -33,7 +33,7 @@ document.getElementById("form-login").onsubmit = (e) => {
         return;
     }
 
-    if(senha.lenght < 4 ) {
+    if(senha.length < 4 ) {
         mensagem.innerHTML = "<div class = 'erro' <p> Senha muito curta! </p> </div>";
         return;
     }
