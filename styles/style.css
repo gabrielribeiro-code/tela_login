@@ -1,0 +1,74 @@
+:root{
+    --cor-fundo:#94aac7;
+    --cor-fundo-2:#688cbb;
+    --cor-forms:#1594dd;
+    --cor-texto:rgba(27, 48, 51, 0.555);
+    --cor-erro: #b81313;
+    --cor-sucesso: #13b821;
+
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    gap: 5%;
+    
+}
+
+main {
+
+    padding: 3%;
+    gap: 1%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 15px rgba(35, 37, 110, 0.3);
+    background-color: var(--cor-fundo-2);
+}
+
+#form-login{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+}
+
+#form-login input{
+    border-radius: 2%;
+    padding: 5px;
+    border: solid var(--cor-texto);
+}
+
+#form-login button{
+    border: solid var(--cor-texto);
+
+}
+
+#form-login button:hover{
+    background-color:rgb(33, 117, 196)
+}
+
+.toggle{
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: var(--cor-texto);
+}
+
+.erro{
+    color: var(--cor-erro);
+    font-size: 12px;
+    text-align: center;
+}
+
+.sucesso{
+    color: var(--cor-sucesso);
+    font-size: 12px;
+    text-align: center;
+}
