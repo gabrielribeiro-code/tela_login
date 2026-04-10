@@ -28,8 +28,33 @@ document.getElementById("form-login").onsubmit = (e) => {
 
     mensagem.innerHTML = "";
 
-    if(!email.includes("@") || !email.include(".")){
-        mensagem.innerHTML = "<div class = 'erro' <p> Email invállido!</p> </div>";
+    if(!email.includes("@") || !email.includes(".")){
+        mensagem.innerHTML = "<div class = 'erro' <p> Email inválido! </p> </div>";
+        return;
     }
+
+    if(senha.lenght < 4 ) {
+        mensagem.innerHTML = "<div class = 'erro' <p> Senha muito curta </p> </div>";
+        return;
+    }
+
+    if(cadastro){
+
+     localStorage.setItem(email,senha);
+     mensagem.innerHTML = "<div class = 'sucesso' <p> Cadastrado Com Sucesso </p> </div>";
+
+    }else{
+
+        let salva = localStorage.getItem(email);
+
+        if(salva === senha){
+            mensagem.innerHTML = "<div class = 'sucesso' <p> Login feito com Sucesso! </p> </div>";
+
+        } else{
+            mensagem.innerHTML = "<div class = 'erro' <p> Dados Incorretos! </p> </div>";
+        }
+    }
+
+    document.getElementById("form-login").reset();
 
 }
